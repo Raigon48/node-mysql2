@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "dev": "nodemon"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,17 @@
   "bugs": {
     "url": "https://github.com/Raigon48/node-mysql2/issues"
   },
-  "homepage": "https://github.com/Raigon48/node-mysql2#readme"
+  "homepage": "https://github.com/Raigon48/node-mysql2#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.9.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.2.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
 }
